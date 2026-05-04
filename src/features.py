@@ -4,12 +4,7 @@ def create_tfidf():
     print("features.py loaded")
     
     return TfidfVectorizer(
-        # max_features=20000,
-        # ngram_range=(1,2),
-        # min_df=2,
-        # max_df=0.9,
-        # sublinear_tf=True
-        
+ 
         max_features=30000,        # allow richer vocab
         ngram_range=(1,3),         # include trigrams
         min_df=2,                  # drop rare noise
